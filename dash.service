@@ -1,0 +1,12 @@
+[Unit] 
+Description= project-description
+
+[Service]
+ExecStart=/usr/bin/node  path2dash.js &
+
+SyslogIdentifier=dash-identifier
+User=user-name
+EnvironmentFile=path2dash.env
+
+[Install] 
+WantedBy=multi-user.target
